@@ -1,0 +1,352 @@
+[
+    {
+        "cCod": "ABADIA DE GOIAS (GO)",
+        "cNome": "Abadia de Goiás",
+        "cUF": "GO",
+        "nCodIBGE": "5200050",
+        "nCodSIAFI": 1050
+    },
+    {
+        "cCod": "ABADIA DOS DOURADOS (MG)",
+        "cNome": "Abadia dos Dourados",
+        "cUF": "MG",
+        "nCodIBGE": "3100104",
+        "nCodSIAFI": 4001
+    },
+    {
+        "cCod": "ABADIANIA (GO)",
+        "cNome": "Abadiania",
+        "cUF": "GO",
+        "nCodIBGE": "5200100",
+        "nCodSIAFI": 9201
+    },
+    {
+        "cCod": "ABAETE (MG)",
+        "cNome": "Abaete",
+        "cUF": "MG",
+        "nCodIBGE": "3100203",
+        "nCodSIAFI": 4003
+    },
+    {
+        "cCod": "ABAETE DOS MENDES (MG)",
+        "cNome": "Abaete dos Mendes",
+        "cUF": "MG",
+        "nCodIBGE": "3100203",
+        "nCodSIAFI": 4003
+    },
+    {
+        "cCod": "ABAETETUBA (PA)",
+        "cNome": "Abaetetuba",
+        "cUF": "PA",
+        "nCodIBGE": "1500107",
+        "nCodSIAFI": 401
+    },
+    {
+        "cCod": "ABAIARA (CE)",
+        "cNome": "Abaiara",
+        "cUF": "CE",
+        "nCodIBGE": "2300101",
+        "nCodSIAFI": 1301
+    },
+    {
+        "cCod": "ABAIRA (BA)",
+        "cNome": "Abaira",
+        "cUF": "BA",
+        "nCodIBGE": "2900108",
+        "nCodSIAFI": 3301
+    },
+    {
+        "cCod": "ABARE (BA)",
+        "cNome": "Abare",
+        "cUF": "BA",
+        "nCodIBGE": "2900207",
+        "nCodSIAFI": 3303
+    },
+    {
+        "cCod": "ABATIA (PR)",
+        "cNome": "Abatia",
+        "cUF": "PR",
+        "nCodIBGE": "4100103",
+        "nCodSIAFI": 7401
+    },
+    {
+        "cCod": "ABDON BATISTA (SC)",
+        "cNome": "Abdon Batista",
+        "cUF": "SC",
+        "nCodIBGE": "4200051",
+        "nCodSIAFI": 9939
+    },
+    {
+        "cCod": "ABEL FIGUEIREDO (PA)",
+        "cNome": "Abel Figueiredo",
+        "cUF": "PA",
+        "nCodIBGE": "1500131",
+        "nCodSIAFI": 375
+    },
+    {
+        "cCod": "ABELARDO LUZ (SC)",
+        "cNome": "Abelardo Luz",
+        "cUF": "SC",
+        "nCodIBGE": "4200101",
+        "nCodSIAFI": 8001
+    },
+    {
+        "cCod": "ABRE CAMPO (MG)",
+        "cNome": "Abre Campo",
+        "cUF": "MG",
+        "nCodIBGE": "3100302",
+        "nCodSIAFI": 4005
+    },
+    {
+        "cCod": "ABREU E LIMA (PE)",
+        "cNome": "Abreu e Lima",
+        "cUF": "PE",
+        "nCodIBGE": "2600054",
+        "nCodSIAFI": 2631
+    },
+    {
+        "cCod": "ABREULANDIA (TO)",
+        "cNome": "Abreulândia",
+        "cUF": "TO",
+        "nCodIBGE": "1700251",
+        "nCodSIAFI": 337
+    },
+    {
+        "cCod": "ACAIACA (MG)",
+        "cNome": "Acaiaca",
+        "cUF": "MG",
+        "nCodIBGE": "3100401",
+        "nCodSIAFI": 4007
+    },
+    {
+        "cCod": "ACAILANDIA (MA)",
+        "cNome": "Acailândia",
+        "cUF": "MA",
+        "nCodIBGE": "2100055",
+        "nCodSIAFI": 961
+    },
+    {
+        "cCod": "ACAJUTIBA (BA)",
+        "cNome": "Acajutiba",
+        "cUF": "BA",
+        "nCodIBGE": "2900306",
+        "nCodSIAFI": 3305
+    },
+    {
+        "cCod": "ACARA (PA)",
+        "cNome": "Acara",
+        "cUF": "PA",
+        "nCodIBGE": "1500206",
+        "nCodSIAFI": 403
+    },
+    {
+        "cCod": "ACARAPE (CE)",
+        "cNome": "Acarape",
+        "cUF": "CE",
+        "nCodIBGE": "2300150",
+        "nCodSIAFI": 1231
+    },
+    {
+        "cCod": "ACARAU (CE)",
+        "cNome": "Acarau",
+        "cUF": "CE",
+        "nCodIBGE": "2300200",
+        "nCodSIAFI": 1303
+    },
+    {
+        "cCod": "ACARI (RN)",
+        "cNome": "Acari",
+        "cUF": "RN",
+        "nCodIBGE": "2400109",
+        "nCodSIAFI": 1601
+    },
+    {
+        "cCod": "ACAUA (PI)",
+        "cNome": "Acaua",
+        "cUF": "PI",
+        "nCodIBGE": "2200053",
+        "nCodSIAFI": 266
+    },
+    {
+        "cCod": "ACEGUA (RS)",
+        "cNome": "Acegua",
+        "cUF": "RS",
+        "nCodIBGE": "4300034",
+        "nCodSIAFI": 1118
+    },
+    {
+        "cCod": "ACOPIARA (CE)",
+        "cNome": "Acopiara",
+        "cUF": "CE",
+        "nCodIBGE": "2300309",
+        "nCodSIAFI": 1305
+    },
+    {
+        "cCod": "ACORIZAL (MT)",
+        "cNome": "Acorizal",
+        "cUF": "MT",
+        "nCodIBGE": "5100102",
+        "nCodSIAFI": 9001
+    },
+    {
+        "cCod": "ACRELANDIA (AC)",
+        "cNome": "Acrelândia",
+        "cUF": "AC",
+        "nCodIBGE": "1200013",
+        "nCodSIAFI": 643
+    },
+    {
+        "cCod": "ACREUNA (GO)",
+        "cNome": "Acreuna",
+        "cUF": "GO",
+        "nCodIBGE": "5200134",
+        "nCodSIAFI": 9645
+    },
+    {
+        "cCod": "ACU (RN)",
+        "cNome": "Açu",
+        "cUF": "RN",
+        "nCodIBGE": "2400208",
+        "nCodSIAFI": 1603
+    },
+    {
+        "cCod": "ACUCENA (MG)",
+        "cNome": "Acucena",
+        "cUF": "MG",
+        "nCodIBGE": "3100500",
+        "nCodSIAFI": 4009
+    },
+    {
+        "cCod": "ADAMANTINA (SP)",
+        "cNome": "Adamantina",
+        "cUF": "SP",
+        "nCodIBGE": "3500105",
+        "nCodSIAFI": 6101
+    },
+    {
+        "cCod": "ADELANDIA (GO)",
+        "cNome": "Adelândia",
+        "cUF": "GO",
+        "nCodIBGE": "5200159",
+        "nCodSIAFI": 9769
+    },
+    {
+        "cCod": "ADOLFO (SP)",
+        "cNome": "Adolfo",
+        "cUF": "SP",
+        "nCodIBGE": "3500204",
+        "nCodSIAFI": 6103
+    },
+    {
+        "cCod": "ADRIANOPOLIS (PR)",
+        "cNome": "Adrianópolis",
+        "cUF": "PR",
+        "nCodIBGE": "4100202",
+        "nCodSIAFI": 7403
+    },
+    {
+        "cCod": "ADUSTINA (BA)",
+        "cNome": "Adustina",
+        "cUF": "BA",
+        "nCodIBGE": "2900355",
+        "nCodSIAFI": 3253
+    },
+    {
+        "cCod": "AFOGADOS DA INGAZEIRA (PE)",
+        "cNome": "Afogados da Ingazeira",
+        "cUF": "PE",
+        "nCodIBGE": "2600104",
+        "nCodSIAFI": 2301
+    },
+    {
+        "cCod": "AFONSO BEZERRA (RN)",
+        "cNome": "Afonso Bezerra",
+        "cUF": "RN",
+        "nCodIBGE": "2400307",
+        "nCodSIAFI": 1605
+    },
+    {
+        "cCod": "AFONSO CLAUDIO (ES)",
+        "cNome": "Afonso Claudio",
+        "cUF": "ES",
+        "nCodIBGE": "3200102",
+        "nCodSIAFI": 5601
+    },
+    {
+        "cCod": "AFONSO CUNHA (MA)",
+        "cNome": "Afonso Cunha",
+        "cUF": "MA",
+        "nCodIBGE": "2100105",
+        "nCodSIAFI": 701
+    },
+    {
+        "cCod": "AFRANIO (PE)",
+        "cNome": "Afranio",
+        "cUF": "PE",
+        "nCodIBGE": "2600203",
+        "nCodSIAFI": 2303
+    },
+    {
+        "cCod": "AFUA (PA)",
+        "cNome": "Afua",
+        "cUF": "PA",
+        "nCodIBGE": "1500305",
+        "nCodSIAFI": 405
+    },
+    {
+        "cCod": "AGRESTINA (PE)",
+        "cNome": "Agrestina",
+        "cUF": "PE",
+        "nCodIBGE": "2600302",
+        "nCodSIAFI": 2305
+    },
+    {
+        "cCod": "AGRICOLANDIA (PI)",
+        "cNome": "Agricolândia",
+        "cUF": "PI",
+        "nCodIBGE": "2200103",
+        "nCodSIAFI": 1001
+    },
+    {
+        "cCod": "AGROLANDIA (SC)",
+        "cNome": "Agrolândia",
+        "cUF": "SC",
+        "nCodIBGE": "4200200",
+        "nCodSIAFI": 8003
+    },
+    {
+        "cCod": "AGRONOMICA (SC)",
+        "cNome": "Agronomica",
+        "cUF": "SC",
+        "nCodIBGE": "4200309",
+        "nCodSIAFI": 8005
+    },
+    {
+        "cCod": "AGUA AZUL DO NORTE (PA)",
+        "cNome": "Água Azul do Norte",
+        "cUF": "PA",
+        "nCodIBGE": "1500347",
+        "nCodSIAFI": 383
+    },
+    {
+        "cCod": "AGUA BOA (MG)",
+        "cNome": "Água Boa",
+        "cUF": "MG",
+        "nCodIBGE": "3100609",
+        "nCodSIAFI": 4011
+    },
+    {
+        "cCod": "AGUA BOA (MT)",
+        "cNome": "Água Boa",
+        "cUF": "MT",
+        "nCodIBGE": "5100201",
+        "nCodSIAFI": 9191
+    },
+    {
+        "cCod": "AGUA BRANCA (AL)",
+        "cNome": "Água Branca",
+        "cUF": "AL",
+        "nCodIBGE": "2700102",
+        "nCodSIAFI": 2701
+    }
+]

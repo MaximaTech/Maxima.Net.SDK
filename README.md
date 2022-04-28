@@ -7,7 +7,7 @@ Para tanto, desenvolvemos um SDK que abstrai bastante a complexidade deste proce
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Maxima.NET.SDK.Integracao` | [![NuGet](https://img.shields.io/nuget/v/Maxima.NET.SDK.Integracao.svg)](https://www.nuget.org/packages/Maxima.NET.SDK.Integracao/) | [![Nuget](https://img.shields.io/nuget/dt/Maxima.NET.SDK.Integracao.svg)](https://www.nuget.org/packages/Maxima.NET.SDK.Integracao/) |
 
-Acesse nossa [documentação](https://github.com/MaximaTech/Maxima.Integracao.Omie/wiki) e saiba mais.
+Acesse nossa [documentação](https://github.com/MaximaTech/Maxima.Net.SDK/wiki) e saiba mais.
 
 ### Contribuindo com este projeto
 

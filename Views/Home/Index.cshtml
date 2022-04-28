@@ -1,0 +1,54 @@
+﻿@{
+ViewData["Title"] = "Home Page";
+}
+
+@model Maxima.Net.SDK.Domain.Model.ConfiguracaoMaxima
+
+<div class="text-center">
+    <h1 class="display-6">Bem vindo ao SDK .Net MáximaTech</h1>
+
+    <div class="card text-center">
+        <div class="card-header">
+            Login Maxima
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <form asp-action="Maxima">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group row">
+                            <label asp-for="Login" class="control-label col-sm-3 col-form-label"></label>
+                            <div class="col-sm-9">
+
+                                <input asp-for="Login" class="form-control" placeholder="Email Maxima" required />
+                                <span asp-validation-for="Login" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label asp-for="Senha" class="control-label col-sm-3 col-form-label"></label>
+                            <div class="col-sm-9">
+
+                                <input asp-for="Senha" type="password" class="form-control" placeholder="Senha Maxima"
+                                    required />
+                                <span asp-validation-for="Senha" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type="submit" value="Proximo" class="btn btn-primary  col-12" />
+                        </div>
+                        <p>Após realizar o login com sucesso, você sera redirecionado para a fila de tarefas do
+                            hangfire, onde contem um exemplo de enviar cidades para api da MáximaTech</p>
+                        <p>Para realizar um teste click em "Tarefas recorrentes" -> marque a fila de "Atualizar Cidades"
+                            e click em "Disparar agora"</p>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
