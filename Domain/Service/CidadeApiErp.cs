@@ -19,6 +19,10 @@ using Newtonsoft.Json;
 
 namespace Maxima.Net.SDK.Domain.Service
 {
+    /// <summary>
+    /// Classe responsável por buscar os dados no seu ERP, converter para entidade Máxima
+    /// é usar o SDK para enviar para Máxima.
+    /// </summary>
     public class CidadeApiErp : ICidadeApiErp
     {
 
@@ -43,29 +47,42 @@ namespace Maxima.Net.SDK.Domain.Service
                 var processados = new List<string>();
                 var listaIncluir = new List<CidadeMaxima>();
                 var listaAlterar = new List<CidadeMaxima>();
+
+                //Exemplo de busca de dados, a origem dos dados pode ser uma api do seu ERP ou buscar diretamente no seu banco de dados.
                 var cidadesErp = JsonConvert.DeserializeObject<List<CidadeErp>>(File.ReadAllText("./Data/Payloads/cidades_erp.json"));
 
                 foreach (var cidades in cidadesErp)
                 {
+                    //Utilizamos o automapper para converter uma entidade do seu ERP para a entidade da Máxima.
+                    //https://automapper.org/
                     var mapCidades = mapper.Map<CidadeMaxima>(cidades);
 
+                    //Realiza a verificação se essa entidade teve alguma mudança com a que já foi enviada para Máxima.
                     if (cidadesBd.Any(x => x.Chave == mapCidades.CodigoCidade && x.Valor != mapCidades.Hash))
                     {
+                        //Se a mesma já foi enviada mas teve alguma mudança ex: alterou o nome da cidade, sera marcada para alteração.
                         listaAlterar.Add(mapCidades);
                     }
                     else if (!cidadesBd.Any(x => x.Chave == mapCidades.CodigoCidade))
                     {
+                        //Se não teve mudança mas ainda não foi enviada sera marcada para ser incluida.
                         listaIncluir.Add(mapCidades);
                     }
                 }
 
                 if (listaIncluir.Any())
                 {
+                    //Inclui a lista de cidades na api da Máxima.
                     ResponseApiMaxima<CidadeMaxima> retornoApiMaxima = await apiMaxima.IncluirCidade(listaIncluir);
+
+                    //Verifica se teve sucesso no retorno.
+                    //Obs: sempre verifique se teve sucesso no retorno.
                     if (retornoApiMaxima.Sucesso)
                     {
+                        //Adiciona os codigos das cidades a lista de entidades processadas, para ser gravada no banco de controle.
                         processados.AddRange(retornoApiMaxima.ItensInserido.Select(x => x.CodigoCidade).ToList());
 
+                        //Cria o objeto a ser salvo no banco de controle.
                         foreach (var item in retornoApiMaxima.ItensInserido)
                         {
                             ControleDadosModel cidadeModel = new()
@@ -78,8 +95,10 @@ namespace Maxima.Net.SDK.Domain.Service
                         }
                         await dbContext.SaveChangesAsync();
 
+                        //Imprime o log de sucesso    
                         log.InserirOk(1, 1, retornoApiMaxima.ItensInserido.Count());
 
+                        //Mesmo havendo sucesso pode acontecer de alguma entidade estar inconsistente, ex: nome da cidade não foi informada. A api ira retorna como erro, e não ira incluir.
                         if (retornoApiMaxima.ErrosValidacao.Any())
                             log.InserirErro(1, 1, retornoApiMaxima.TotalItensNaoInserido, retornoApiMaxima.ErrosValidacaoFormatado);
                     }
@@ -118,16 +137,18 @@ namespace Maxima.Net.SDK.Domain.Service
                     log.NenhumRegistroAlterado(1, 1);
 
 
-
+                //Busca todas as chaves das cidades já incluidas no banco de controle.
                 var cidadeList = await dbContext.ControleDadosModels.Where(c => c.Tabela == ControleDadosEnum.CIDADES)
                     .AsNoTracking()
                     .Select(f => f.Chave)
                     .ToListAsync();
 
+                //Realiza a diferença entre o que já esta no banco de controle com as que foi processadas.    
                 var excluidos = processados
                     .Except(cidadeList)
                     .ToList();
 
+                //Mapeia quais cidades devem ser excluidas da api Máxima atravez da diferença que foi encontrada.    
                 var cidadeRemove = await dbContext.ControleDadosModels.Where(c => c.Tabela == ControleDadosEnum.CIDADES)
                     .AsNoTracking()
                     .Where(f => excluidos.Contains(f.Chave))

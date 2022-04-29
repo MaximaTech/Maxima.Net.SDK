@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Maxima.Net.SDK.Data.Models
 {
+    /// <summary>
+    /// Classe utilizada para armazenar as entidades enviadas para Máxima.
+    /// </summary>
     public class ControleDadosModel : IEntityTypeConfiguration<ControleDadosModel>
     {
         public int Id { get; set; }

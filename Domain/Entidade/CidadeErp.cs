@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Maxima.Net.SDK.Domain.Entidade
 {
+    /// <summary>
+    /// Exemplo de uma entidade cidade de um ERP.
+    /// </summary>
     public class CidadeErp
     {
         public string cCod { get; set; }

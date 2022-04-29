@@ -7,6 +7,9 @@ using Maxima.Net.SDK.Integracao.Entidades;
 
 namespace Maxima.Net.SDK.Domain.Mappings
 {
+    /// <summary>
+    /// Classe responsável por fazer o mapper entre a entidade cidade do ERP e a entidade cidade da Máxima.
+    /// </summary>
     public partial class MapAll
     {
         public void CidadeMapping()

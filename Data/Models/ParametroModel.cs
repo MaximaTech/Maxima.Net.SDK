@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace Maxima.Net.SDK.Data.Models
 {
+    /// <summary>
+    /// Classe utilizada para guardar alguns parâmetros de configurações locais.
+    /// ex: login e senha Máxima.
+    /// </summary>
     public class ParametroModel
     {
         public int Id { get; set; }

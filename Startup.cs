@@ -22,12 +22,13 @@ namespace Maxima.Net.SDK
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //Carrega a chave do Google Cloud - Cloud Pub/Sub. A mesma deve ser colocada na pasta rais do projeto
+            //Obs: nesse projeto modelo não tem a chave, para usar essa função entre em contato com a máxima para adiquirir a sua chave.
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", Path.Combine(Directory.GetCurrentDirectory(), "chave_pub_sub_subscrib.json"));
         }
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
