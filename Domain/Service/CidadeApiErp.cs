@@ -110,7 +110,7 @@ namespace Maxima.Net.SDK.Domain.Service
 
                 if (listaAlterar.Any())
                 {
-                    ResponseApiMaxima<CidadeMaxima> retornoApiMaxima = await apiMaxima.AlterarCidade(listaIncluir);
+                    ResponseApiMaxima<CidadeMaxima> retornoApiMaxima = await apiMaxima.AlterarCidade(listaAlterar);
                     if (retornoApiMaxima.Sucesso)
                     {
                         processados.AddRange(retornoApiMaxima.ItensInserido.Select(x => x.CodigoCidade).ToList());
